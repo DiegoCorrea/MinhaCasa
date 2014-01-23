@@ -12,6 +12,9 @@ public class MinhaCasa{
 	public static void main() throws IOException{
 		criarCasa();
 		criarComodo();
+		criarComodo();
+		criarComodo();
+		criarComodo();
 		
 		imprimirComodos();
 
