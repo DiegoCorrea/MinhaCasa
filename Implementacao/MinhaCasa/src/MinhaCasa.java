@@ -6,10 +6,14 @@ import Controlador.Casa.Casa;
 import Controlador.Comodo.Comodo;
 
 public class MinhaCasa{
+	
 	static Casa casa;
+
 	public static void main() throws IOException{
 		criarCasa();
+		criarComodo();
 		
+		imprimirComodos();
 
 	}
 
@@ -21,12 +25,8 @@ public class MinhaCasa{
 
 	public static void criarComodo() throws IOException
 	{
-		String nome;
-
 		System.out.println("Digite o nome da Comodo:");
-		Comodo comodo = new Comodo(lerTeclado());
-
-		casa.addComodo(comodo);
+		casa.addComodo(new Comodo(lerTeclado()));
 	}
 
 	public static String lerTeclado() throws IOException
@@ -34,4 +34,21 @@ public class MinhaCasa{
 		BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));  
 		return buf.readLine();
 	}
+	
+	public static void imprimirComodos() throws IOException
+	{
+		List<Comodo> comodos = casa.getTodosComodos();
+                int i;
+                
+                if ( comodos.isEmpty() )
+			System.out.println("Não existe comodo cadastrado");
+
+                for(i = 0; i < this.comodos.size(); i++)
+                {
+                        if( this.comodos.get(i).getNome().equals(aNome) )
+                        {
+                                return this.comodos.get(i);
+                        }
+                }
+        }
 }
