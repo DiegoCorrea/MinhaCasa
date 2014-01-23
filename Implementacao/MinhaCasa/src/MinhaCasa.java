@@ -16,6 +16,7 @@ public class MinhaCasa{
 		criarComodo();
 		criarComodo();
 		
+		imprimirCasa();
 		imprimirComodos();
 
 	}
@@ -50,5 +51,10 @@ public class MinhaCasa{
                 {
                 	System.out.println(comodos.get(i).getNome();
                 }
+        }
+        
+        public static void imprimirCasa()
+        {
+		System.out.println(casa.getNome());
         }
 }
