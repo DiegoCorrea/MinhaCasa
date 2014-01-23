@@ -43,12 +43,9 @@ public class MinhaCasa{
                 if ( comodos.isEmpty() )
 			System.out.println("Não existe comodo cadastrado");
 
-                for(i = 0; i < this.comodos.size(); i++)
+                for(i = 0; i < comodos.size(); i++)
                 {
-                        if( this.comodos.get(i).getNome().equals(aNome) )
-                        {
-                                return this.comodos.get(i);
-                        }
+                	System.out.println(comodos.get(i).getNome();
                 }
         }
 }
