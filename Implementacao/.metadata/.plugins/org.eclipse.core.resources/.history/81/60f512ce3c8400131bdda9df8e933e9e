@@ -1,0 +1,32 @@
+import Controlador/Casa/Casa.java
+public class MinhaCasa{
+
+	public static void main(){
+		
+
+	}
+
+	public static void criarCasa()
+	{
+		String nome;
+
+		System.out.println("Digite o nome da Casa:");
+		Casa casa = new Casa(lerTeclado());
+	}
+
+	public static void criarComodo()
+	{
+		String nome;
+
+		system.out.println("Digite o nome da Comodo:");
+		Comodo comodo = new Comodo(lerTeclado());
+
+		Casa.addComodo(comodo);
+	}
+
+	public static String lerTeclado()
+	{
+		BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));  
+		return buf.readLine();
+	}
+}

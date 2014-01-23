@@ -1,0 +1,8 @@
+package Controlador.AparelhoDomestico;
+
+import java.util.List;
+
+public class AparelhoDomestico
+{
+	
+}

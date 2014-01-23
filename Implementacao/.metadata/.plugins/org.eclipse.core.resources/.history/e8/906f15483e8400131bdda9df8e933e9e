@@ -1,0 +1,35 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import Controlador.Casa.Casa;
+import Controlador.Comodo.Comodo;
+public class MinhaCasa{
+
+	public static void main(){
+		
+
+	}
+
+	public static void criarCasa() throws IOException
+	{
+		System.out.println("Digite o nome da Casa:");
+		Casa casa = new Casa(lerTeclado());
+	}
+
+	public static void criarComodo()
+	{
+		String nome;
+
+		System.out.println("Digite o nome da Comodo:");
+		Comodo comodo = new Comodo(lerTeclado());
+
+		casa.addComodo(comodo);
+	}
+
+	public static String lerTeclado() throws IOException
+	{
+		BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));  
+		return buf.readLine();
+	}
+}

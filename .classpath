@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="Controlador/Comodo/|Controlador/Casa/" kind="src" path="Implementacao"/>
+	<classpathentry kind="src" path="Implementacao/Controlador/Casa"/>
+	<classpathentry kind="src" path="Implementacao/Controlador/Comodo"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
