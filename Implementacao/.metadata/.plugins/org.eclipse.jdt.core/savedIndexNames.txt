@@ -1,14 +1,3 @@
-INDEX VERSION 1.126+/media/a73dccb3-6d7b-4a59-99fc-6b5ca58209ea/Dropbox/UFBA/2013.2/MATA63 - Engenharia de Software II/Trabalho Pratico/MinhaCasa/Implementacao/.metadata/.plugins/org.eclipse.jdt.core
-3829351191.index
-1514218975.index
-664202523.index
-2409005450.index
-1198206356.index
-1989682271.index
-1022003584.index
-1928036885.index
+INDEX VERSION 1.126+/home/pat/MinhaCasa/Implementacao/.metadata/.plugins/org.eclipse.jdt.core
 3637159590.index
-1714592054.index
-1737441395.index
-1791498496.index
-4267884898.index
+1716713901.index
