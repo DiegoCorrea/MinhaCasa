@@ -1,6 +1,7 @@
 package Controlador.Casa;
+package Controlador.Comodo;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 import Controlador.Comodo.Comodo;
@@ -13,7 +14,7 @@ public class Casa
 
 	public Casa(String aNome){
 		this.nome = aNome;
-		this.comodos = new ArrayList<>();
+		this.comodos = new List<Comodo>();
 	}
 
 	public String getNome()

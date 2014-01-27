@@ -1,6 +1,5 @@
 package Controlador.Casa;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import Controlador.Comodo.Comodo;
