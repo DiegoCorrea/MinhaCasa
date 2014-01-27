@@ -60,17 +60,16 @@ public class MinhaCasa {
 		List<Comodo> comodos = casa.getTodosComodos();
         int i;
                 
-                if ( comodos.isEmpty() )
-			    System.out.println("Não existe comodo cadastrado");
+        if (comodos.isEmpty())
+        	System.out.println("Não existe comodo cadastrado");
 
-                for(i = 0; i < comodos.size(); i++)
-                {
-                	System.out.println(comodos.get(i).getNome());
-                }
-        }
+        for(i = 0; i < comodos.size(); i++)
+            System.out.println(comodos.get(i).getNome());
+
+	}
         
-        public static void imprimirCasa()
-        {
+    public static void imprimirCasa()
+    {
 		System.out.println(casa.getNome());
-        }
+    }
 }
