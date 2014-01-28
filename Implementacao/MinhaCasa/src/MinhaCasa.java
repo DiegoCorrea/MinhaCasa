@@ -105,13 +105,12 @@ public class MinhaCasa {
 	public static void imprimirComodos() 
 	{
 		List<Comodo> comodos = casa.getTodosComodos();
-        int i;
                 
         if (comodos.isEmpty())
         	System.out.println("Não existe comodo cadastrado");
 
-        for(i = 0; i < comodos.size(); i++)
-            System.out.println(comodos.get(i).getNome());
+        for(Comodo c : comodos)
+            System.out.println(c.getNome());
 
 	}
         
