@@ -1,9 +1,5 @@
 package Controlador.Aparelho;
 
-import java.util.List;
-
-import Controlador.Aparelho.Aparelho;
-
 public class Aparelho {
 	private String nome;
 	private boolean on;

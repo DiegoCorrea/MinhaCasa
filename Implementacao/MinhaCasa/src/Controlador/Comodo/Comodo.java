@@ -3,14 +3,20 @@ package Controlador.Comodo;
 import java.util.ArrayList;
 import java.util.List;
 import Controlador.Aparelho.Aparelho;
+import Controlador.Janela.Janela;
+import Controlador.Porta.Porta;
 public class Comodo
 {
 	private String nome;
 	private List<Aparelho> aparelhos;
-
+	private List<Porta> portas;
+	private List<Janela> janelas;
+	
 	public Comodo(String aNome) {
 		this.nome = aNome;
-		aparelhos = new ArrayList<Aparelho> ();
+		this.aparelhos = new ArrayList<Aparelho> ();
+		this.portas = new ArrayList<Porta>();
+		this.janelas = new ArrayList<Janela>();
 
 	}
 
