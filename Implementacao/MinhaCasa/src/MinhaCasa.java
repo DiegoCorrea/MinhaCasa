@@ -18,31 +18,46 @@ public class MinhaCasa {
 		
 		imprimirCasa();
 		imprimirComodos();
+		
+		removerComodo();
+		imprimirComodos();
+		removerCasa();
+		imprimirCasa();
 
 	}
-
+	
+	/** CRUD CASA **/
 	public static void criarCasa() 
 	{
 		System.out.println("Digite o nome da Casa:");
 		casa = new Casa(lerTeclado());
 	}
 	
-	/* patrick */
 	public static void removerCasa() 
 	{
-		if (casa == null) {
+		if (casa == null)
 			System.out.println("ERRO: Casa nao cadastrada");
-		} else {
+		else
 			casa = null;
-		}
 	}
 
 	public static void criarComodo() 
 	{
 		System.out.println("Digite o nome da Comodo:");
+
 		casa.addComodo(new Comodo(lerTeclado()));
 	}
 
+	public static void removerComodo() 
+	{
+		System.out.println("Digite o nome da Comodo:");
+		
+		if (casa.delComodo(casa.getComodo(lerTeclado())))
+			System.out.println("Ok!");
+		else
+			System.out.println("Comodo nao existe");
+	}
+	
 	public static String lerTeclado() 
 	{
 		BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));  
@@ -70,6 +85,9 @@ public class MinhaCasa {
         
     public static void imprimirCasa()
     {
-		System.out.println(casa.getNome());
+    	if (casa == null)
+    		System.out.println("Casa nao cadastrada");
+    	else
+    		System.out.println(casa.getNome());
     }
 }

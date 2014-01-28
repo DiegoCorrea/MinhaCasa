@@ -1,16 +1,17 @@
 package Controlador.Comodo;
 
+import java.util.ArrayList;
 import java.util.List;
-
+import Controlador.Aparelho.Aparelho;
 public class Comodo
 {
 	private String nome;
-	//private List<AparelhoDomestico> aparelho;
+	private List<Aparelho> aparelhos;
 
 
-	public Comodo(String aNome){
+	public Comodo(String aNome) {
 		this.nome = aNome;
-		//aparelhos = new List<AparelhoDomestico> ();
+		aparelhos = new ArrayList<Aparelho> ();
 
 	}
 
@@ -27,6 +28,37 @@ public class Comodo
 		return true;
 	}
 
+	
+	public List<Aparelho> getTodosAparelhos()
+	{
+		return this.aparelhos;
+	}
+
+	public boolean addAparelho(Aparelho aAparelho)
+	{
+		return this.aparelhos.add(aAparelho);
+	}
+	
+	public boolean delAparelho(Aparelho aAparelho)
+	{
+		return this.aparelhos.remove(aAparelho);
+	}
+	
+	public Aparelho getAparelho(String aNome)
+	{
+		int i;
+		if ( this.aparelhos.isEmpty() )
+			return null;
+
+		for(i = 0; i < this.aparelhos.size(); i++)
+		{
+			if( this.aparelhos.get(i).getNome().equals(aNome) )
+			{
+				return this.aparelhos.get(i);
+			}
+		}
+		return null;
+	}
 	//public List<AparelhoDomestico> getTodosAparelhos()
 	//{
 	//	return this.aparelhos;

@@ -37,11 +37,14 @@ public class Casa
 
 	public boolean addComodo(Comodo aComodo)
 	{
-		if (this.comodos.add(aComodo) == false)
-			return false;
-		return true;
+		return this.comodos.add(aComodo);
 	}
-
+	
+	public boolean delComodo(Comodo aComodo)
+	{
+		return this.comodos.remove(aComodo);
+	}
+	
 	public Comodo getComodo(String aNome)
 	{
 		int i;
