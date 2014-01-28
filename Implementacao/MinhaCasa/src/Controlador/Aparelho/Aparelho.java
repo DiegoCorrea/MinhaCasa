@@ -10,6 +10,7 @@ public class Aparelho {
 	
 	public Aparelho(String aNome) {
 		this.nome = aNome;
+		on = false;
 	}
 	
 	public String getNome()

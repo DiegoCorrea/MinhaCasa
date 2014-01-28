@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
 
+import Controlador.Aparelho.Aparelho;
 import Controlador.Casa.Casa;
 import Controlador.Comodo.Comodo;
 
@@ -19,10 +20,15 @@ public class MinhaCasa {
 		imprimirCasa();
 		imprimirComodos();
 		
-		removerComodo();
+		criarAparelho();
+		criarAparelho();
+		criarAparelho();
+		
+		relatorioAparelhos();
+		//removerComodo();
 		imprimirComodos();
-		removerCasa();
-		imprimirCasa();
+		//removerCasa();
+		//imprimirCasa();
 
 	}
 	
@@ -58,6 +64,20 @@ public class MinhaCasa {
 			System.out.println("Comodo nao existe");
 	}
 	
+	public static void criarAparelho() 
+	{
+		System.out.println("Digite o nome do comodo em que esta o aparelho:");
+		Comodo c = casa.getComodo(lerTeclado());
+		
+		if (c == null) {
+			System.out.println("Comodo nao existe");
+			return;
+		}
+		
+		System.out.println("Digite o nome do aparelho:");
+		c.addAparelho(new Aparelho(lerTeclado()));
+	}
+	
 	public static String lerTeclado() 
 	{
 		BufferedReader buf = new BufferedReader(new InputStreamReader(System.in));  
@@ -68,6 +88,18 @@ public class MinhaCasa {
 			e.printStackTrace();
 		}
 		return "";
+	}
+	
+	public static void relatorioAparelhos() {
+		List<Comodo> comodos = casa.getTodosComodos();
+		
+        if (comodos.isEmpty())
+        	System.out.println("Não existe comodo cadastrado");
+        
+		for (Comodo c : comodos) {
+			System.out.println("Aparelhos no comodo: " + c.getNome());
+			c.relatorioAparelhos();
+		}
 	}
 	
 	public static void imprimirComodos() 

@@ -8,7 +8,6 @@ public class Comodo
 	private String nome;
 	private List<Aparelho> aparelhos;
 
-
 	public Comodo(String aNome) {
 		this.nome = aNome;
 		aparelhos = new ArrayList<Aparelho> ();
@@ -58,6 +57,14 @@ public class Comodo
 			}
 		}
 		return null;
+	}
+	
+	public void relatorioAparelhos()
+	{
+		for (Aparelho a : aparelhos)
+			System.out.println("Aparelho: " + a.getNome() + " ; Ligado? " + a.getStatus());
+		
+		return;
 	}
 	//public List<AparelhoDomestico> getTodosAparelhos()
 	//{
