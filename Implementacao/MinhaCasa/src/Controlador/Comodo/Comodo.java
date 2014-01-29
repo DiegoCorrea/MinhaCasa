@@ -1,16 +1,22 @@
 package Controlador.Comodo;
 
+import java.util.ArrayList;
 import java.util.List;
-
+import Controlador.Aparelho.Aparelho;
+import Controlador.Janela.Janela;
+import Controlador.Porta.Porta;
 public class Comodo
 {
 	private String nome;
-	//private List<AparelhoDomestico> aparelho;
-
-
-	public Comodo(String aNome){
+	private List<Aparelho> aparelhos;
+	private List<Porta> portas;
+	private List<Janela> janelas;
+	
+	public Comodo(String aNome) {
 		this.nome = aNome;
-		//aparelhos = new List<AparelhoDomestico> ();
+		this.aparelhos = new ArrayList<Aparelho> ();
+		this.portas = new ArrayList<Porta>();
+		this.janelas = new ArrayList<Janela>();
 
 	}
 
@@ -27,6 +33,45 @@ public class Comodo
 		return true;
 	}
 
+	
+	public List<Aparelho> getTodosAparelhos()
+	{
+		return this.aparelhos;
+	}
+
+	public boolean addAparelho(Aparelho aAparelho)
+	{
+		return this.aparelhos.add(aAparelho);
+	}
+	
+	public boolean delAparelho(Aparelho aAparelho)
+	{
+		return this.aparelhos.remove(aAparelho);
+	}
+	
+	public Aparelho getAparelho(String aNome)
+	{
+		int i;
+		if ( this.aparelhos.isEmpty() )
+			return null;
+
+		for(i = 0; i < this.aparelhos.size(); i++)
+		{
+			if( this.aparelhos.get(i).getNome().equals(aNome) )
+			{
+				return this.aparelhos.get(i);
+			}
+		}
+		return null;
+	}
+	
+	public void relatorioAparelhos()
+	{
+		for (Aparelho a : aparelhos)
+			System.out.println("Aparelho: " + a.getNome() + " ; Ligado? " + a.getStatus());
+		
+		return;
+	}
 	//public List<AparelhoDomestico> getTodosAparelhos()
 	//{
 	//	return this.aparelhos;

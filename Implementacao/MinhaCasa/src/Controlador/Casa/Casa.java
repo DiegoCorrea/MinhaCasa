@@ -1,5 +1,6 @@
 package Controlador.Casa;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,11 +10,11 @@ import Controlador.Comodo.Comodo;
 public class Casa
 {
 	private String nome;
-	private List<Comodo> comodos;
+	private List<Comodo> comodos = null;
 
 	public Casa(String aNome){
 		this.nome = aNome;
-		this.comodos = new ArrayList<>();
+		comodos = new ArrayList<Comodo>();
 	}
 
 	public String getNome()
@@ -36,11 +37,14 @@ public class Casa
 
 	public boolean addComodo(Comodo aComodo)
 	{
-		if (this.comodos.add(aComodo) == false)
-			return false;
-		return true;
+		return this.comodos.add(aComodo);
 	}
-
+	
+	public boolean delComodo(Comodo aComodo)
+	{
+		return this.comodos.remove(aComodo);
+	}
+	
 	public Comodo getComodo(String aNome)
 	{
 		int i;
