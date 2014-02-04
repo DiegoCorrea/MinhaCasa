@@ -63,6 +63,7 @@ public class MinhaCasa {
 			
 			Comodo c = null;
 			Aparelho a = null;
+			
 			// qnuery de comodo direto no banco
 			/*
 			ObjectSet<Comodo> comodos = db.queryByExample(new Comodo("quarto"));

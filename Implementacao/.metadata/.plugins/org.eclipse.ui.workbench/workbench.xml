@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="17" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
 <window height="744" maximized="true" width="1024" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -31,6 +31,12 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
 </presentation>
 </folder>
 </info>
@@ -39,9 +45,33 @@
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/home/pat/MinhaCasa/Implementacao/Main.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="63" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MinhaCasa.java" partName="MinhaCasa.java" path="/home/pat/MinhaCasa/Implementacao/MinhaCasa/src/MinhaCasa.java" title="MinhaCasa.java" tooltip="MinhaCasa/src/MinhaCasa.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MinhaCasa/src/MinhaCasa.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MinhaCasa.java" partName="MinhaCasa.java" path="/home/pat/MinhaCasa/Implementacao/MinhaCasa/src/minhacasa/MinhaCasa.java" title="MinhaCasa.java" tooltip="MinhaCasa/src/minhacasa/MinhaCasa.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MinhaCasa/src/minhacasa/MinhaCasa.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1409" selectionTopPixel="645"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Usuario.java" partName="Usuario.java" path="/home/pat/MinhaCasa/Implementacao/MinhaCasa/src/minhacasa/Usuario.java" title="Usuario.java" tooltip="MinhaCasa/src/minhacasa/Usuario.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MinhaCasa/src/minhacasa/Usuario.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="18" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainGUI.java" partName="MainGUI.java" path="/home/pat/MinhaCasa/Implementacao/MinhaCasa/src/minhacasa/MainGUI.java" title="MainGUI.java" tooltip="MinhaCasa/src/minhacasa/MainGUI.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MinhaCasa/src/minhacasa/MainGUI.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="18" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Agendador.java" partName="Agendador.java" path="/home/pat/MinhaCasa/Implementacao/MinhaCasa/src/minhacasa/controlador/Agendador.java" title="Agendador.java" tooltip="MinhaCasa/src/minhacasa/controlador/Agendador.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MinhaCasa/src/minhacasa/controlador/Agendador.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="176" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Casa.java" partName="Casa.java" path="/home/pat/MinhaCasa/Implementacao/MinhaCasa/src/minhacasa/controlador/Casa.java" title="Casa.java" tooltip="MinhaCasa/src/minhacasa/controlador/Casa.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MinhaCasa/src/minhacasa/controlador/Casa.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="169" selectionTopPixel="119"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Aparelho.java" partName="Aparelho.java" path="/home/pat/MinhaCasa/Implementacao/MinhaCasa/src/minhacasa/controlador/Aparelho.java" title="Aparelho.java" tooltip="MinhaCasa/src/minhacasa/controlador/Aparelho.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MinhaCasa/src/minhacasa/controlador/Aparelho.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="165" selectionTopPixel="34"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Comodo.java" partName="Comodo.java" path="/home/pat/MinhaCasa/Implementacao/MinhaCasa/src/minhacasa/controlador/Comodo.java" title="Comodo.java" tooltip="MinhaCasa/src/minhacasa/controlador/Comodo.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MinhaCasa/src/minhacasa/controlador/Comodo.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="83" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -50,6 +80,10 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (14 items)"/>
+<category IMemento.internal.id="Errors"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="1268" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -57,9 +91,6 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -90,6 +121,9 @@
 </customFilters>
 </viewState>
 </view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
 <columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="350" org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="865" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.priorityField="35" org.eclipse.ui.ide.resourceField="105"/>
@@ -108,7 +142,7 @@
 </view>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -286,61 +320,176 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" uri="file:/home/pat/MinhaCasa/Implementacao/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/Controlador/Casa/Casa.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/Usuario.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/MinhaCasa.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/SQLite.java"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" uri="file:/home/pat/MinhaCasa/Implementacao/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/Usuario.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/Controlador/Casa/Casa.java"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" uri="file:/home/pat/MinhaCasa/Implementacao/Main.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/MinhaCasa.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/SQLite.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/MinhaCasa.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/com/minhacasa/MinhaCasa.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/Usuario.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/MainGUI.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/com/minhacasa/MainGUI.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/com/minhacasa/Usuario.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/Controlador/Agendador/Agendador.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/com/minhacasa/controlador/Agendador.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/Controlador/Casa/Casa.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/com/minhacasa/controlador/Casa.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/Controlador/Aparelho/Aparelho.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/com/minhacasa/controlador/Aparelho.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/Controlador/Comodo/Comodo.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/com/minhacasa/controlador/Comodo.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/com/minhacasa/Main.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/minhacasa/MainGUI.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/minhacasa/Usuario.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/minhacasa/controlador/Agendador.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/minhacasa/controlador/Casa.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/minhacasa/controlador/Aparelho.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/minhacasa/controlador/Comodo.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/MinhaCasa/src/minhacasa/MinhaCasa.java"/>
 </editors>
+<item historyLabel="MinhaCasa.java" index="1"/>
+<item historyLabel="SQLite.java" index="2"/>
 <item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Casa.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Usuario.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<position info="not_deleted" x="58" y="0"/>
 </item>
 <item historyLabel="MinhaCasa.java" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Casa.java" index="1">
+<item historyLabel="MinhaCasa.java" index="4">
+<position info="not_deleted" x="23" y="0"/>
+</item>
+<item historyLabel="Usuario.java" index="5">
+<position info="not_deleted" x="22" y="0"/>
+</item>
+<item historyLabel="MainGUI.java" index="6">
+<position info="not_deleted" x="23" y="0"/>
+</item>
+<item historyLabel="MainGUI.java" index="7">
+<position info="not_deleted" x="22" y="0"/>
+</item>
+<item historyLabel="MinhaCasa.java" index="4">
+<position info="not_deleted" x="23" y="0"/>
+</item>
+<item historyLabel="Usuario.java" index="5">
+<position info="not_deleted" x="22" y="0"/>
+</item>
+<item historyLabel="Usuario.java" index="8">
+<position info="not_deleted" x="22" y="0"/>
+</item>
+<item historyLabel="MinhaCasa.java" index="4">
+<position info="not_deleted" x="23" y="0"/>
+</item>
+<item historyLabel="Agendador.java" index="9">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SQLite.java" index="4">
-<position info="not_deleted" x="315" y="0"/>
+<item historyLabel="Agendador.java" index="10">
+<position info="not_deleted" x="33" y="0"/>
 </item>
-<item historyLabel="MinhaCasa.java" index="3">
+<item historyLabel="MinhaCasa.java" index="4">
+<position info="not_deleted" x="23" y="0"/>
+</item>
+<item historyLabel="Casa.java" index="11">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SQLite.java" index="4">
-<position info="not_deleted" x="315" y="0"/>
+<item historyLabel="Casa.java" index="12">
+<position info="not_deleted" x="207" y="0"/>
 </item>
-<item historyLabel="MinhaCasa.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="MinhaCasa.java" index="4">
+<position info="not_deleted" x="254" y="0"/>
 </item>
-<item historyLabel="Main.java" index="5">
-<position info="not_deleted" x="58" y="0"/>
+<item historyLabel="Aparelho.java" index="13">
+<position info="not_deleted" x="702" y="9"/>
 </item>
-<item historyLabel="MinhaCasa.java" index="3"/>
-<item historyLabel="Usuario.java" index="6"/>
-<item historyLabel="Casa.java" index="7"/>
-<item historyLabel="Main.java" index="8">
-<position info="not_deleted" x="58" y="0"/>
+<item historyLabel="Aparelho.java" index="14">
+<position info="not_deleted" x="33" y="0"/>
 </item>
-<item historyLabel="MinhaCasa.java" index="9"/>
-<item historyLabel="SQLite.java" index="10"/>
-<item historyLabel="Main.java" index="8">
-<position info="not_deleted" x="58" y="0"/>
+<item historyLabel="Agendador.java" index="10">
+<position info="not_deleted" x="181" y="0"/>
 </item>
-<item active="true" historyLabel="MinhaCasa.java" index="11">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Aparelho.java" index="14">
+<position info="not_deleted" x="160" y="0"/>
+</item>
+<item historyLabel="MinhaCasa.java" index="4">
+<position info="not_deleted" x="211" y="0"/>
+</item>
+<item historyLabel="Comodo.java" index="15">
+<position info="not_deleted" x="121" y="0"/>
+</item>
+<item historyLabel="MinhaCasa.java" index="4">
+<position info="not_deleted" x="211" y="0"/>
+</item>
+<item historyLabel="Comodo.java" index="16">
+<position info="not_deleted" x="153" y="0"/>
+</item>
+<item historyLabel="Comodo.java" index="16">
+<position info="not_deleted" x="87" y="0"/>
+</item>
+<item historyLabel="Main.java" index="17">
+<position info="not_deleted" x="1840" y="0"/>
+</item>
+<item historyLabel="Main.java" index="17">
+<position info="not_deleted" x="1835" y="0"/>
+</item>
+<item historyLabel="MinhaCasa.java" index="4">
+<position info="not_deleted" x="1793" y="0"/>
+</item>
+<item historyLabel="MinhaCasa.java" index="4">
+<position info="not_deleted" x="1841" y="0"/>
+</item>
+<item historyLabel="MainGUI.java" index="18">
+<position info="not_deleted" x="22" y="0"/>
+</item>
+<item historyLabel="MainGUI.java" index="18">
+<position info="not_deleted" x="18" y="0"/>
+</item>
+<item historyLabel="Usuario.java" index="19">
+<position info="not_deleted" x="22" y="0"/>
+</item>
+<item historyLabel="Usuario.java" index="19">
+<position info="not_deleted" x="18" y="0"/>
+</item>
+<item historyLabel="Agendador.java" index="20">
+<position info="not_deleted" x="180" y="0"/>
+</item>
+<item historyLabel="Agendador.java" index="20">
+<position info="not_deleted" x="176" y="0"/>
+</item>
+<item historyLabel="Casa.java" index="21">
+<position info="not_deleted" x="173" y="0"/>
+</item>
+<item historyLabel="Casa.java" index="21">
+<position info="not_deleted" x="169" y="0"/>
+</item>
+<item historyLabel="Aparelho.java" index="22">
+<position info="not_deleted" x="169" y="0"/>
+</item>
+<item historyLabel="Aparelho.java" index="22">
+<position info="not_deleted" x="165" y="0"/>
+</item>
+<item historyLabel="Comodo.java" index="23">
+<position info="not_deleted" x="87" y="0"/>
+</item>
+<item historyLabel="Comodo.java" index="23">
+<position info="not_deleted" x="83" y="0"/>
+</item>
+<item historyLabel="MinhaCasa.java" index="24">
+<position info="not_deleted" x="2320" y="0"/>
+</item>
+<item historyLabel="MinhaCasa.java" index="24">
+<position info="not_deleted" x="2316" y="0"/>
+</item>
+<item historyLabel="MinhaCasa.java" index="24">
+<position info="not_deleted" x="1639" y="79"/>
+</item>
+<item historyLabel="MinhaCasa.java" index="24">
+<position info="not_deleted" x="1910" y="0"/>
+</item>
+<item historyLabel="MinhaCasa.java" index="24">
+<position info="not_deleted" x="1688" y="0"/>
+</item>
+<item historyLabel="MinhaCasa.java" index="24">
+<position info="not_deleted" x="1700" y="0"/>
+</item>
+<item active="true" historyLabel="MinhaCasa.java" index="24">
+<position info="not_deleted" x="1723" y="19"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -350,6 +499,10 @@
 <trimLayout>
 <trimArea IMemento.internal.id="16384">
 <trimItem IMemento.internal.id="left"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
+<trimItem IMemento.internal.id="right"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -367,12 +520,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SQLite.java" tooltip="MinhaCasa/src/SQLite.java">
 <persistable path="/MinhaCasa/src/SQLite.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Usuario.java" tooltip="MinhaCasa/src/Usuario.java">
-<persistable path="/MinhaCasa/src/Usuario.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Casa.java" tooltip="MinhaCasa/src/Controlador/Casa/Casa.java">
-<persistable path="/MinhaCasa/src/Controlador/Casa/Casa.java"/>
 </file>
 <file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="/home/pat/MinhaCasa/Implementacao/Main.java">
 <persistable uri="file:/home/pat/MinhaCasa/Implementacao/Main.java"/>
