@@ -60,4 +60,10 @@ public class Aparelho {
 			return false;
 		return true;
 	}
+	
+	@Override
+	public String toString() 
+	{
+		return this.getNome();
+	}
 }
