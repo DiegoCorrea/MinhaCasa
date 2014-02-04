@@ -26,23 +26,38 @@ public class MinhaCasa {
 		
 		try {
 			criarCasa();
-			criarComodo();
-			criarComodo();
+			//criarComodo();
+			//criarComodo();
 			
 			imprimirCasa();
 			imprimirComodos();
 
-			criarAparelho();
-			criarAparelho();
-			criarAparelho();
+			System.out.println("Ligando PC no Quarto...");
+			
+			Aparelho a;
+			// query de comodo direto no banco
+			/*
+			ObjectSet<Comodo> comodos = db.queryByExample(new Comodo("quarto"));
+			a = comodos.get(0).getAparelho("pc");
+			*/
+			
+			// query usando a casa
+			a = casa.getComodo("quarto").getAparelho("pc");
+			a.ligaDesliga();
+			db.ext().store(casa, 5);
+
+			//criarAparelho();
+			//criarAparelho();
+			//criarAparelho();
 			
 			relatorioAparelhos();
 			//removerComodo();
-			imprimirComodos();
+			//imprimirComodos();
 			//removerCasa();
 			//imprimirCasa();
 			
 		} finally {
+			System.out.println("Fechando banco de dados...");
 			db.close();
 		}
 		

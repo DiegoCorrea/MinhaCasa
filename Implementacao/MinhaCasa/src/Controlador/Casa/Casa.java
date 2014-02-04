@@ -47,7 +47,14 @@ public class Casa
 	
 	public Comodo getComodo(String aNome)
 	{
+		for (Comodo c : comodos)
+			if (c.getNome().equals(aNome))
+				return c;
+	
+		return null;
+		/*
 		int i;
+
 		if ( this.comodos.isEmpty() )
 			return null;
 
@@ -58,6 +65,6 @@ public class Casa
 				return this.comodos.get(i);
 			}
 		}
-		return null;
+		*/
 	}
 }

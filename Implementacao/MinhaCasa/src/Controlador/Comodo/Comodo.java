@@ -51,6 +51,12 @@ public class Comodo
 	
 	public Aparelho getAparelho(String aNome)
 	{
+		for (Aparelho a : aparelhos)
+			if (a.getNome().equals(aNome))
+				return a;
+		
+		return null;
+		/*
 		int i;
 		if ( this.aparelhos.isEmpty() )
 			return null;
@@ -63,6 +69,7 @@ public class Comodo
 			}
 		}
 		return null;
+		*/
 	}
 	
 	public void relatorioAparelhos()
