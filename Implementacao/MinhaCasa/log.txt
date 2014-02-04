@@ -1,0 +1,16 @@
+Fev 04, 2014 10:32:05 AM MinhaCasa main
+Informações: >>> log pra usuario: user1
+Fev 04, 2014 10:32:13 AM MinhaCasa criarCasa
+Informações: Casa casa já existe. Obtendo do banco...
+Fev 04, 2014 10:33:51 AM MinhaCasa main
+Informações: >>> log pra usuario: user1
+Fev 04, 2014 10:33:57 AM MinhaCasa criarCasa
+Informações: Casa casa já existe. Obtendo do banco...
+Fev 04, 2014 10:44:29 AM MinhaCasa main
+Informações: >>> log pra usuario: user1
+Fev 04, 2014 10:44:33 AM MinhaCasa criarCasa
+Informações: Casa casa já existe. Obtendo do banco...
+Fev 04, 2014 10:44:33 AM MinhaCasa relatorioAparelhos
+Informações: Solicitado relatorio de aparelhos na casa casa
+Fev 04, 2014 10:44:33 AM MinhaCasa relatorioAparelhos
+Informações: Solicitado relatorio de aparelhos na casa casa

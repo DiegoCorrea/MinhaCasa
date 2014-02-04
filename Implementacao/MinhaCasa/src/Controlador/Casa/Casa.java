@@ -12,7 +12,8 @@ public class Casa
 	private String nome;
 	private List<Comodo> comodos = null;
 
-	public Casa(String aNome){
+	public Casa(String aNome)
+	{
 		this.nome = aNome;
 		comodos = new ArrayList<Comodo>();
 	}
@@ -66,5 +67,11 @@ public class Casa
 			}
 		}
 		*/
+	}
+	
+	@Override
+	public String toString() 
+	{
+		return this.getNome();
 	}
 }

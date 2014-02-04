@@ -79,6 +79,13 @@ public class Comodo
 		
 		return;
 	}
+	
+	@Override
+	public String toString() 
+	{
+		return this.getNome();
+	}
+	
 	//public List<AparelhoDomestico> getTodosAparelhos()
 	//{
 	//	return this.aparelhos;

@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.List;
+import java.util.logging.*;
 
 import Controlador.Aparelho.Aparelho;
 import Controlador.Casa.Casa;
@@ -15,17 +16,38 @@ import com.db4o.query.*;
 public class MinhaCasa {
 	
 	static Casa casa = null;
-	@SuppressWarnings("deprecation")
-	static ObjectContainer db = Db4o.openFile("db.dbo");
+	static ObjectContainer db;
 	static final int profundidade_db = 5;
-	
-	public static void main(String [] args)
+	static FileHandler fh; 
+    static final Logger logger = Logger.getLogger("minhacasa");
+    
+
+    
+	@SuppressWarnings("deprecation")
+	public static void main(String [] args) 
 	{
-		do {
-			Usuario.logar();
-		} while(!Usuario.logado());	
-		
+		// logging
+	    try {
+			fh = new FileHandler("log.txt", true); // true para append no arquivo.
+		    fh.setFormatter(new SimpleFormatter());
+		    logger.addHandler(fh);
+		} catch (SecurityException | IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	    
+	    // login, db e operacoes
 		try {
+			// login
+			do {
+				Usuario.logar();
+			} while(!Usuario.logado());
+		    logger.info(">>> log pra usuario: user1");
+		    
+		    // db
+			db = Db4o.openFile("db.dbo");
+			
+			// operacoes
 			criarCasa();
 			//criarComodo();
 			//criarComodo();
@@ -60,10 +82,10 @@ public class MinhaCasa {
 			//imprimirComodos();
 			//removerCasa();
 			//imprimirCasa();
-			
-		} finally {
+		} finally { 
 			System.out.println("Fechando banco de dados...");
 			db.close();
+			fh.close();
 		}
 		
 
@@ -80,11 +102,12 @@ public class MinhaCasa {
 		
 		ObjectSet<Casa> casas = db.queryByExample(new Casa(nome));
 		if (casas.isEmpty()) {
-			System.out.println("Casa não existe. Criando ...");
+			logger.info("Casa " + nome + " não existe. Criando ...");
 			casa = new Casa(nome);
 			db.store(casa);
+			logger.info("Casa " + casa + " criada");
 		} else {
-			System.out.println("Casa já existe. Obtendo do banco...");
+			logger.info("Casa " + nome + " já existe. Obtendo do banco...");
 			casa = casas.get(0);
 			relatorioAparelhos();
 		}
@@ -93,7 +116,7 @@ public class MinhaCasa {
 	public static void removerCasa() 
 	{
 		if (casa == null) {
-			System.out.println("ERRO: Casa nao cadastrada");
+			logger.warning("ERRO: Casa nao cadastrada");
 		} else {
 			// db.delete(casa);
 			casa = null;
@@ -105,6 +128,7 @@ public class MinhaCasa {
 		System.out.println("Digite o nome da Comodo:");
 		Comodo comodo = new Comodo(lerTeclado());
 		casa.addComodo(comodo);
+		logger.info("Comodo " + comodo + " adicionado na casa " + casa);
 		db.ext().store(casa, profundidade_db);
 		
 	}
@@ -112,22 +136,26 @@ public class MinhaCasa {
 	public static void removerComodo() 
 	{
 		System.out.println("Digite o nome da Comodo:");
-		
-		if (casa.delComodo(casa.getComodo(lerTeclado()))) {
-			System.out.println("Ok!");
+		String nomeComodo = lerTeclado();
+		Comodo c = casa.getComodo(nomeComodo);
+		if (casa.delComodo(c)) {
+			logger.info("Comodo " + nomeComodo + " removido da casa " + casa);
 			db.ext().store(casa, profundidade_db);
 		} else {
 			System.out.println("Comodo nao existe");
+			logger.info("Comodo " + nomeComodo + " não existe na casa " + casa);
 		}
 	}
 	
 	public static void criarAparelho() 
 	{
 		System.out.println("Digite o nome do comodo em que esta o aparelho:");
-		Comodo c = casa.getComodo(lerTeclado());
+		String nomeComodo = lerTeclado();
+		Comodo c = casa.getComodo(nomeComodo);
 		Aparelho a;
 		
 		if (c == null) {
+			logger.info("Comodo " + nomeComodo + " não existe na casa " + casa);
 			System.out.println("Comodo nao existe");
 			return;
 		}
@@ -137,6 +165,7 @@ public class MinhaCasa {
 		
 		c.addAparelho(a);
 		db.ext().store(casa, profundidade_db);
+		logger.info("Aparelho adicionado: " + a + " no " + c + " da casa " + casa);
 	}
 	
 	public static String lerTeclado() 
@@ -153,6 +182,8 @@ public class MinhaCasa {
 	
 	public static void relatorioAparelhos() {
 		List<Comodo> comodos = casa.getTodosComodos();
+		
+		logger.info("Solicitado relatorio de aparelhos na casa " + casa);
 		
         if (comodos.isEmpty())
         	System.out.println("Não existe comodo cadastrado");
