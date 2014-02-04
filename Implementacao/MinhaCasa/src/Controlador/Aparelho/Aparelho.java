@@ -1,7 +1,6 @@
 package Controlador.Aparelho;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -9,11 +8,11 @@ import Controlador.Agendador.Agendador;
 
 public class Aparelho {
 	private String nome;
-	private boolean on = false;
+	private boolean on;
 	
 	public Aparelho(String aNome) {
 		this.nome = aNome;
-		on = false;
+		this.on = false;
 	}
 	
 	/** 
@@ -22,7 +21,13 @@ public class Aparelho {
 	
 	public void agendar(String time){
 		SimpleDateFormat format = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
-		Date date = format.parse(time);
+		Date date = null;
+		try {
+			date = format.parse(time);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		agendar(date);
 	}

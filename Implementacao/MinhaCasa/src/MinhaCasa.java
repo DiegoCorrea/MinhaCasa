@@ -13,6 +13,10 @@ public class MinhaCasa {
 
 	public static void main(String [] args)
 	{
+		do {
+			Usuario.logar();
+		} while(!Usuario.logado());	
+		
 		criarCasa();
 		criarComodo();
 		criarComodo();

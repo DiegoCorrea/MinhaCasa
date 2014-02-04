@@ -18,7 +18,7 @@ public class Agendador implements Runnable{
 	private String estado = "RUNNING";
 
 	public Agendador(Object element, Date date, String action){
-		long time;
+		long time = 0;
 		long mim = System.currentTimeMillis();
 		
 		try{
