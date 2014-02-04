@@ -17,6 +17,7 @@ public class MinhaCasa {
 	static Casa casa = null;
 	@SuppressWarnings("deprecation")
 	static ObjectContainer db = Db4o.openFile("db.dbo");
+	static final int profundidade_db = 5;
 	
 	public static void main(String [] args)
 	{
@@ -41,11 +42,15 @@ public class MinhaCasa {
 			a = comodos.get(0).getAparelho("pc");
 			*/
 			
-			// query usando a casa
-			a = casa.getComodo("quarto").getAparelho("pc");
-			a.ligaDesliga();
-			db.ext().store(casa, 5);
+			// query usando a casa - teste de liga e desliga e persistencia OK
+			//a = casa.getComodo("quarto").getAparelho("pc");
+			//a.ligaDesliga();
+			//db.ext().store(casa, profundidade_db);
 
+			// teste de remocao e persistencia ok
+			//casa.delComodo(casa.getComodo("sala"));
+			//db.ext().store(casa, profundidade_db);
+			
 			//criarAparelho();
 			//criarAparelho();
 			//criarAparelho();
@@ -100,7 +105,7 @@ public class MinhaCasa {
 		System.out.println("Digite o nome da Comodo:");
 		Comodo comodo = new Comodo(lerTeclado());
 		casa.addComodo(comodo);
-		db.ext().store(casa,5);
+		db.ext().store(casa, profundidade_db);
 		
 	}
 
@@ -108,10 +113,12 @@ public class MinhaCasa {
 	{
 		System.out.println("Digite o nome da Comodo:");
 		
-		if (casa.delComodo(casa.getComodo(lerTeclado())))
+		if (casa.delComodo(casa.getComodo(lerTeclado()))) {
 			System.out.println("Ok!");
-		else
+			db.ext().store(casa, profundidade_db);
+		} else {
 			System.out.println("Comodo nao existe");
+		}
 	}
 	
 	public static void criarAparelho() 
@@ -129,7 +136,7 @@ public class MinhaCasa {
 		a = new Aparelho(lerTeclado());
 		
 		c.addAparelho(a);
-		db.ext().store(casa,5);
+		db.ext().store(casa, profundidade_db);
 	}
 	
 	public static String lerTeclado() 
