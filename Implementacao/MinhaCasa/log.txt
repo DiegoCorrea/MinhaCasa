@@ -202,3 +202,13 @@ Fev 04, 2014 1:30:16 PM minhacasa.MinhaCasa main
 Informações: Ligando/Desligando aparelho pc
 Fev 04, 2014 1:30:16 PM minhacasa.MinhaCasa relatorioAparelhos
 Informações: Solicitado relatorio de aparelhos na casa casa
+Fev 04, 2014 1:35:17 PM minhacasa.MinhaCasa main
+Informações: >>> log pra usuario: user1
+Fev 04, 2014 1:35:19 PM minhacasa.MinhaCasa criarCasa
+Informações: Casa casa já existe. Obtendo do banco...
+Fev 04, 2014 1:35:19 PM minhacasa.MinhaCasa relatorioAparelhos
+Informações: Solicitado relatorio de aparelhos na casa casa
+Fev 04, 2014 1:35:19 PM minhacasa.MinhaCasa main
+Informações: Ligando/Desligando aparelho pc
+Fev 04, 2014 1:35:19 PM minhacasa.MinhaCasa relatorioAparelhos
+Informações: Solicitado relatorio de aparelhos na casa casa
