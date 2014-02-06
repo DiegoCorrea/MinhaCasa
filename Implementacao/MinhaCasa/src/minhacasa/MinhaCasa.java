@@ -21,7 +21,7 @@ public class MinhaCasa
 	static Casa casa = null; 		// a casa a ser controlada
 	static ObjectContainer db;		// o banco de dados em arquivo
 	static final int profundidade_db = 5; 	// a cada save de objeto o banco salva objetos 
-						// referenciados até esta profundidade
+						// referenciados ate esta profundidade
 	static FileHandler fh; 			// filehandler para logging
 	static final Logger logger = Logger.getLogger("minhacasa");
 
@@ -92,7 +92,7 @@ public class MinhaCasa
 		//criarComodo();
 		imprimirCasa();
 		imprimirComodos();
-		/criarAparelho();
+		//criarAparelho();
 		//criarAparelho();
 		//criarAparelho();
 		
@@ -121,7 +121,7 @@ public class MinhaCasa
 		
 		ObjectSet<Casa> casas = db.queryByExample(new Casa(nome));
 		if (casas.isEmpty()) {
-			logger.info("Casa " + nome + " não existe. Criando ...");
+			logger.info("Casa " + nome + " nao existe. Criando ...");
 			casa = new Casa(nome);
 			db.store(casa);
 			logger.info("Casa " + casa + " criada");
@@ -162,7 +162,7 @@ public class MinhaCasa
 			db.ext().store(casa, profundidade_db);
 		} else {
 			System.out.println("Comodo nao existe");
-			logger.info("Comodo " + nomeComodo + " não existe na casa " + casa);
+			logger.info("Comodo " + nomeComodo + " nao existe na casa " + casa);
 		}
 	}
 	
@@ -174,7 +174,7 @@ public class MinhaCasa
 		Aparelho a;
 		
 		if (c == null) {
-			logger.info("Comodo " + nomeComodo + " não existe na casa " + casa);
+			logger.info("Comodo " + nomeComodo + " nao existe na casa " + casa);
 			System.out.println("Comodo nao existe");
 			return;
 		}
@@ -206,7 +206,7 @@ public class MinhaCasa
 		logger.info("Solicitado relatorio de aparelhos na casa " + casa);
 		
         	if (comodos.isEmpty())
-        		System.out.println("Não existe comodo cadastrado");
+        		System.out.println("Nao existe comodo cadastrado");
         
 		for (Comodo c : comodos) {
 			System.out.println("Aparelhos no comodo: " + c.getNome());
@@ -219,7 +219,7 @@ public class MinhaCasa
 		List<Comodo> comodos = casa.getTodosComodos();
                 
 		if (comodos.isEmpty())
-			System.out.println("Não existe comodo cadastrado");
+			System.out.println("Nao existe comodo cadastrado");
 
 		for(Comodo c : comodos)
 			System.out.println(c.getNome());
