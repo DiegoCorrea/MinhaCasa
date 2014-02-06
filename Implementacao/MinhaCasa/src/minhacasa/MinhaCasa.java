@@ -11,66 +11,58 @@ import minhacasa.controlador.Aparelho;
 import minhacasa.controlador.Casa;
 import minhacasa.controlador.Comodo;
 
-
 import com.db4o.Db4o;
 import com.db4o.ObjectContainer;
 import com.db4o.ObjectSet;
 import com.db4o.query.*;
 
-public class MinhaCasa {
-	
-	static Casa casa = null;
-	static ObjectContainer db;
-	static final int profundidade_db = 5;
-	static FileHandler fh; 
-    static final Logger logger = Logger.getLogger("minhacasa");
-    
+public class MinhaCasa
+{
+	static Casa casa = null; 		// a casa a ser controlada
+	static ObjectContainer db;		// o banco de dados em arquivo
+	static final int profundidade_db = 5; 	// a cada save de objeto o banco salva objetos 
+						// referenciados até esta profundidade
+	static FileHandler fh; 			// filehandler para logging
+	static final Logger logger = Logger.getLogger("minhacasa");
 
-    
-	@SuppressWarnings("deprecation")
+	@SuppressWarnings("deprecation")	// supress deprecation por causa de Db4o.openFile 
 	public static void main(String [] args) 
 	{
-		// logging
-	    try {
+		// seta arquivo de texto para logging
+		try {
 			fh = new FileHandler("log.txt", true); // true para append no arquivo.
-		    fh.setFormatter(new SimpleFormatter());
-		    logger.addHandler(fh);
+			fh.setFormatter(new SimpleFormatter());
+			logger.addHandler(fh);
 		} catch (SecurityException | IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	    
-	    // login, db e operacoes
+		// login, db e operacoes
 		try {
 			// login
 			do {
 				Usuario.logar();
 			} while(!Usuario.logado());
-		    logger.info(">>> log pra usuario: user1");
+			logger.info(">>> log pra usuario: user1");
 		    
-		    // db
+			// db
 			db = Db4o.openFile("db.dbo");
 			
 			// operacoes
-			criarCasa();
-			//criarComodo();
-			//criarComodo();
-			
-			imprimirCasa();
-			imprimirComodos();
-
-			
+			realizarOperacoesDeTeste();
 			
 			Comodo c = null;
 			Aparelho a = null;
 			
-			// qnuery de comodo direto no banco
+			// query de comodo direto no banco
 			/*
 			ObjectSet<Comodo> comodos = db.queryByExample(new Comodo("quarto"));
 			a = comodos.get(0).getAparelho("pc");
 			*/
 			
-			// query usando a casa - teste de liga e desliga e persistencia OK
+			// query usando a casa para obter comodo
+			// teste de liga e desliga e persistencia OK
 			c = casa.getComodo("quarto");
 			if (c != null)
 				a = c.getAparelho("pc");
@@ -79,31 +71,44 @@ public class MinhaCasa {
 				a.ligaDesliga();
 				System.out.println("Ligando PC no Quarto...");
 				logger.info("Ligando/Desligando aparelho " + a);
-				db.ext().store(casa, profundidade_db);
+				db.ext().store(casa, profundidade_db); // salva objeto
 			}
 
 
 			// teste de remocao e persistencia ok
 			//casa.delComodo(casa.getComodo("sala"));
 			//db.ext().store(casa, profundidade_db);
-			
-			//criarAparelho();
-			//criarAparelho();
-			//criarAparelho();
-			
-			relatorioAparelhos();
-			//removerComodo();
-			//imprimirComodos();
-			//removerCasa();
-			//imprimirCasa();
 		} finally { 
 			System.out.println("Fechando banco de dados...");
 			db.close();
 			fh.close();
 		}
+	}
+	
+	public static void realizarOperacoesDeTeste()
+	{
+		criarCasa();
+		//criarComodo();
+		//criarComodo();
+		imprimirCasa();
+		imprimirComodos();
+		/criarAparelho();
+		//criarAparelho();
+		//criarAparelho();
 		
-
-
+		relatorioAparelhos();
+		//removerComodo();
+		//imprimirComodos();
+		//removerCasa();
+		//imprimirCasa();
+		criarAparelho();
+		//criarAparelho();
+		//criarAparelho();
+		relatorioAparelhos();
+		//removerComodo();
+		//imprimirComodos();
+		//removerCasa();
+		//imprimirCasa();
 	}
 	
 	/** CRUD CASA **/
@@ -194,13 +199,14 @@ public class MinhaCasa {
 		return "";
 	}
 	
-	public static void relatorioAparelhos() {
+	public static void relatorioAparelhos()
+	{
 		List<Comodo> comodos = casa.getTodosComodos();
 		
 		logger.info("Solicitado relatorio de aparelhos na casa " + casa);
 		
-        if (comodos.isEmpty())
-        	System.out.println("Não existe comodo cadastrado");
+        	if (comodos.isEmpty())
+        		System.out.println("Não existe comodo cadastrado");
         
 		for (Comodo c : comodos) {
 			System.out.println("Aparelhos no comodo: " + c.getNome());
@@ -212,19 +218,19 @@ public class MinhaCasa {
 	{
 		List<Comodo> comodos = casa.getTodosComodos();
                 
-        if (comodos.isEmpty())
-        	System.out.println("Não existe comodo cadastrado");
+		if (comodos.isEmpty())
+			System.out.println("Não existe comodo cadastrado");
 
-        for(Comodo c : comodos)
-            System.out.println(c.getNome());
+		for(Comodo c : comodos)
+			System.out.println(c.getNome());
 
 	}
         
-    public static void imprimirCasa()
-    {
-    	if (casa == null)
-    		System.out.println("Casa nao cadastrada");
-    	else
-    		System.out.println(casa.getNome());
-    }
+	public static void imprimirCasa()
+	{
+    		if (casa == null)
+			System.out.println("Casa nao cadastrada");
+		else
+			System.out.println(casa.getNome());
+	}
 }
