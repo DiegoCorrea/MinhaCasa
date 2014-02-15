@@ -1,12 +1,11 @@
-package minhacasa.controlador;
+package Controlador.Agendador;
 
-import java.sql.Time;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import minhacasa.controlador.Aparelho;
-
+import Controlador.Aparelho.Aparelho;
+import Controlador.Janela.Janela;
+import Controlador.Porta.Porta;
 
 public class Agendador implements Runnable{
 	
@@ -23,7 +22,7 @@ public class Agendador implements Runnable{
 		long mim = System.currentTimeMillis();
 		
 		try{
-			time = date.getTime() - mim;
+			time = date.getTime() - mim;//novo
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
@@ -46,14 +45,36 @@ public class Agendador implements Runnable{
         
         estado = "FINISHED";
         
+        
+        //SAIDAS (PORTAS E JANELAS)
         switch(acao){
-        	case "ligar":
-        		((Aparelho) elemento).liga();
-        		break;
-        	
-        	case "desligar":
-        		((Aparelho) elemento).desliga();
-        		break;
+    	case "Travar":
+			if(elemento instanceof Porta)	
+				((Porta)elemento).travar();	
+			else ((Janela)elemento).travar();
+			break;
+    	case "Destravar":
+			if(elemento instanceof Porta)	
+				((Porta)elemento).destravar();	
+			else ((Janela)elemento).destravar();
+    		break;
+    	case "Abrir":
+			if(elemento instanceof Porta)	
+			((Porta)elemento).fechar();	
+		else ((Janela)elemento).fechar();
+    		break;
+    	case "Fechar":
+    		if(elemento instanceof Porta)	
+    			((Porta)elemento).abrir();	
+    		else ((Janela)elemento).abrir();
+    		break;
+    	case "ligar":
+    		((Aparelho) elemento).ligar();
+    		break;
+    	
+    	case "desligar":
+    		((Aparelho) elemento).desligar();
+    		break;
         }
     }
 	

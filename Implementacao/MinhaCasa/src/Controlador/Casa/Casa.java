@@ -1,18 +1,18 @@
-package minhacasa.controlador;
-
+package Controlador.Casa;
 
 import java.util.ArrayList;
-import java.util.List;
 
+import com.db4o.ObjectSet;
 
+import Controlador.Comodo.Comodo;
+import DbHandler.DbHandler;
 
 public class Casa
 {
 	private String nome;
-	private List<Comodo> comodos = null;
+	private ArrayList<Comodo> comodos = null;
 
-	public Casa(String aNome)
-	{
+	public Casa(String aNome){
 		this.nome = aNome;
 		comodos = new ArrayList<Comodo>();
 	}
@@ -30,31 +30,24 @@ public class Casa
 		return true;
 	}
 
-	public List<Comodo> getTodosComodos()
-	{
-		return this.comodos;
-	}
-
 	public boolean addComodo(Comodo aComodo)
 	{
-		return this.comodos.add(aComodo);
+		
+		boolean e = this.comodos.add(aComodo);
+		DbHandler.atualizarDb();
+		return e;
 	}
 	
 	public boolean delComodo(Comodo aComodo)
 	{
-		return this.comodos.remove(aComodo);
+		boolean e = this.comodos.remove(aComodo);
+		DbHandler.atualizarDb();
+		return e;
 	}
 	
 	public Comodo getComodo(String aNome)
 	{
-		for (Comodo c : comodos)
-			if (c.getNome().equals(aNome))
-				return c;
-	
-		return null;
-		/*
 		int i;
-
 		if ( this.comodos.isEmpty() )
 			return null;
 
@@ -65,12 +58,10 @@ public class Casa
 				return this.comodos.get(i);
 			}
 		}
-		*/
+		return null;
 	}
 	
-	@Override
-	public String toString() 
-	{
-		return this.getNome();
+	public ArrayList<Comodo> getComodos(){
+		return comodos;
 	}
 }

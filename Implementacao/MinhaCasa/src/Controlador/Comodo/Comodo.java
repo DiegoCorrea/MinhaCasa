@@ -1,19 +1,22 @@
-package minhacasa.controlador;
+package Controlador.Comodo;
 
 import java.util.ArrayList;
-import java.util.List;
+
+import Controlador.Aparelho.Aparelho;
+import Controlador.Janela.Janela;
+import Controlador.Porta.Porta;
 public class Comodo
 {
 	private String nome;
-	private List<Aparelho> aparelhos;
-	private List<Porta> portas;
-	private List<Janela> janelas;
+	private ArrayList<Aparelho> aparelhos;
+	private ArrayList<Porta> portas;
+	private ArrayList<Janela> janelas;
 	
 	public Comodo(String aNome) {
 		this.nome = aNome;
 		this.aparelhos = new ArrayList<Aparelho> ();
-		this.portas = new ArrayList<Porta>();
-		this.janelas = new ArrayList<Janela>();
+		this.setPortas(new ArrayList<Porta>());
+		this.setJanelas(new ArrayList<Janela>());
 
 	}
 
@@ -31,7 +34,7 @@ public class Comodo
 	}
 
 	
-	public List<Aparelho> getTodosAparelhos()
+	public ArrayList<Aparelho> getAparelhos()
 	{
 		return this.aparelhos;
 	}
@@ -48,12 +51,6 @@ public class Comodo
 	
 	public Aparelho getAparelho(String aNome)
 	{
-		for (Aparelho a : aparelhos)
-			if (a.getNome().equals(aNome))
-				return a;
-		
-		return null;
-		/*
 		int i;
 		if ( this.aparelhos.isEmpty() )
 			return null;
@@ -66,7 +63,6 @@ public class Comodo
 			}
 		}
 		return null;
-		*/
 	}
 	
 	public void relatorioAparelhos()
@@ -76,13 +72,6 @@ public class Comodo
 		
 		return;
 	}
-	
-	@Override
-	public String toString() 
-	{
-		return this.getNome();
-	}
-	
 	//public List<AparelhoDomestico> getTodosAparelhos()
 	//{
 	//	return this.aparelhos;
@@ -109,4 +98,50 @@ public class Comodo
 	//		}
 	//	}
 	//}
+	
+	public void addPorta(Porta p){
+		getPortas().add(p);
+	}
+	
+	public void removePorta(Porta p){
+		getPortas().remove(p);
+	}
+	
+	public void addJanela(Janela j){
+		getJanelas().add(j);
+	}
+	
+	public void removeJanela(Janela j){
+		getJanelas().remove(j);
+	}
+
+	public ArrayList<Janela> getJanelas() {
+		return janelas;
+	}
+	
+	public Janela getJanela(String name){
+		for(Janela j : janelas)
+			if(j.getNome().equals(name))
+				return j;
+		return null;
+	}
+	
+	public Porta getPorta(String name){
+		for(Porta p : portas)
+			if(p.getNome().equals(name))
+				return p;
+		return null;
+	}
+	
+	public void setJanelas(ArrayList<Janela> janelas) {
+		this.janelas = janelas;
+	}
+
+	public ArrayList<Porta> getPortas() {
+		return portas;
+	}
+
+	public void setPortas(ArrayList<Porta> portas) {
+		this.portas = portas;
+	}
 }

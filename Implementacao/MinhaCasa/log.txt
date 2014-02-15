@@ -1,214 +1,58 @@
-Fev 04, 2014 10:32:05 AM MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 10:32:13 AM MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 10:33:51 AM MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 10:33:57 AM MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 10:44:29 AM MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 10:44:33 AM MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 10:44:33 AM MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 10:44:33 AM MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:12:56 AM MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 11:12:59 AM MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 11:12:59 AM MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:12:59 AM MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:47:14 AM com.minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 11:47:16 AM com.minhacasa.MinhaCasa criarCasa
-Informações: Casa casa não existe. Criando ...
-Fev 04, 2014 11:47:16 AM com.minhacasa.MinhaCasa criarCasa
-Informações: Casa casa criada
-Fev 04, 2014 11:47:16 AM com.minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:48:01 AM com.minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 11:48:04 AM com.minhacasa.MinhaCasa criarCasa
-Informações: Casa casa não existe. Criando ...
-Fev 04, 2014 11:48:04 AM com.minhacasa.MinhaCasa criarCasa
-Informações: Casa casa criada
-Fev 04, 2014 11:48:04 AM com.minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:48:48 AM com.minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 11:48:50 AM com.minhacasa.MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 11:48:50 AM com.minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:48:50 AM com.minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:50:22 AM com.minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 11:50:24 AM com.minhacasa.MinhaCasa criarCasa
-Informações: Casa casa não existe. Criando ...
-Fev 04, 2014 11:50:24 AM com.minhacasa.MinhaCasa criarCasa
-Informações: Casa casa criada
-Fev 04, 2014 11:50:24 AM com.minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:50:32 AM com.minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 11:50:33 AM com.minhacasa.MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 11:50:34 AM com.minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:50:34 AM com.minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:51:16 AM com.minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 11:51:18 AM com.minhacasa.MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 11:51:18 AM com.minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:51:24 AM com.minhacasa.MinhaCasa criarComodo
-Informações: Comodo quarto adicionado na casa casa
-Fev 04, 2014 11:51:27 AM com.minhacasa.MinhaCasa criarComodo
-Informações: Comodo sala adicionado na casa casa
-Fev 04, 2014 11:51:31 AM com.minhacasa.MinhaCasa criarAparelho
-Informações: Aparelho adicionado: pc no quarto da casa casa
-Fev 04, 2014 11:51:36 AM com.minhacasa.MinhaCasa criarAparelho
-Informações: Aparelho adicionado: tv no quarto da casa casa
-Fev 04, 2014 11:51:38 AM com.minhacasa.MinhaCasa criarAparelho
-Informações: Aparelho adicionado: som no sala da casa casa
-Fev 04, 2014 11:51:38 AM com.minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:51:55 AM com.minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 11:51:57 AM com.minhacasa.MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 11:51:57 AM com.minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:51:57 AM com.minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:52:47 AM com.minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 11:52:49 AM com.minhacasa.MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 11:52:49 AM com.minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:52:49 AM com.minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:56:48 AM com.minhacasa.Main main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 11:56:51 AM com.minhacasa.Main criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 11:56:51 AM com.minhacasa.Main relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:56:51 AM com.minhacasa.Main relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:57:26 AM com.minhacasa.Main main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 11:57:28 AM com.minhacasa.Main criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 11:57:28 AM com.minhacasa.Main relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 11:57:28 AM com.minhacasa.Main main
-Informações: Ligando/Desligando aparelho pc
-Fev 04, 2014 11:57:28 AM com.minhacasa.Main relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 12:06:08 PM com.minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 12:09:09 PM com.minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 12:10:26 PM com.minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 12:15:36 PM minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 12:15:38 PM minhacasa.MinhaCasa criarCasa
-Informações: Casa casa não existe. Criando ...
-Fev 04, 2014 12:15:38 PM minhacasa.MinhaCasa criarCasa
-Informações: Casa casa criada
-Fev 04, 2014 12:16:19 PM minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 12:16:21 PM minhacasa.MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 12:16:21 PM minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 12:17:35 PM minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 12:17:37 PM minhacasa.MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 12:17:37 PM minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 12:17:37 PM minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 12:18:05 PM minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 12:18:07 PM minhacasa.MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 12:18:07 PM minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 12:18:09 PM minhacasa.MinhaCasa criarComodo
-Informações: Comodo quarto adicionado na casa casa
-Fev 04, 2014 12:18:12 PM minhacasa.MinhaCasa criarComodo
-Informações: Comodo sala adicionado na casa casa
-Fev 04, 2014 12:18:25 PM minhacasa.MinhaCasa criarAparelho
-Informações: Aparelho adicionado: pc no quarto da casa casa
-Fev 04, 2014 12:18:33 PM minhacasa.MinhaCasa criarAparelho
-Informações: Aparelho adicionado: tv no quarto da casa casa
-Fev 04, 2014 12:18:34 PM minhacasa.MinhaCasa criarAparelho
-Informações: Aparelho adicionado: som no sala da casa casa
-Fev 04, 2014 12:18:34 PM minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 12:19:49 PM minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 12:19:51 PM minhacasa.MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 12:19:51 PM minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 12:19:51 PM minhacasa.MinhaCasa main
-Informações: Ligando/Desligando aparelho pc
-Fev 04, 2014 12:19:51 PM minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 12:21:03 PM minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 12:26:32 PM minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 12:32:10 PM minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 12:32:12 PM minhacasa.MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 12:32:12 PM minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 12:32:12 PM minhacasa.MinhaCasa main
-Informações: Ligando/Desligando aparelho pc
-Fev 04, 2014 12:32:12 PM minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 12:33:03 PM minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 12:33:04 PM minhacasa.MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 12:33:04 PM minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 12:33:04 PM minhacasa.MinhaCasa main
-Informações: Ligando/Desligando aparelho pc
-Fev 04, 2014 12:33:04 PM minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 1:30:14 PM minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 1:30:16 PM minhacasa.MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 1:30:16 PM minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 1:30:16 PM minhacasa.MinhaCasa main
-Informações: Ligando/Desligando aparelho pc
-Fev 04, 2014 1:30:16 PM minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 1:35:17 PM minhacasa.MinhaCasa main
-Informações: >>> log pra usuario: user1
-Fev 04, 2014 1:35:19 PM minhacasa.MinhaCasa criarCasa
-Informações: Casa casa já existe. Obtendo do banco...
-Fev 04, 2014 1:35:19 PM minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
-Fev 04, 2014 1:35:19 PM minhacasa.MinhaCasa main
-Informações: Ligando/Desligando aparelho pc
-Fev 04, 2014 1:35:19 PM minhacasa.MinhaCasa relatorioAparelhos
-Informações: Solicitado relatorio de aparelhos na casa casa
+Feb 06, 2014 5:49:52 PM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 06, 2014 6:09:14 PM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 06, 2014 6:12:51 PM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 06, 2014 6:40:43 PM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 06, 2014 6:42:07 PM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 06, 2014 6:44:14 PM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 06, 2014 6:44:41 PM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 06, 2014 6:46:44 PM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 06, 2014 6:46:57 PM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 06, 2014 6:47:59 PM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 06, 2014 6:49:01 PM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 8:23:01 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 8:32:20 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 9:00:16 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 9:01:38 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 9:17:54 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 9:20:40 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 9:21:09 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 9:29:26 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 9:30:16 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 9:31:06 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 9:46:58 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 9:59:22 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 9:59:44 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 10:05:32 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 10:11:29 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 10:12:04 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 10:13:19 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
+Feb 11, 2014 10:23:55 AM DbHandler.DbHandler start
+Informa��es: >>> log pra usuario: admin
